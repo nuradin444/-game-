@@ -1,0 +1,230 @@
+//used to call an api from google
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+//Used to hold the text and description of the games in place and being able to change the font sizes 
+
+.shop {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 90px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333333;
+  text-align: center;
+  background-color: lightgreen;
+  line-height: 1.6em;
+}
+
+.shop * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+//used to move around the game images
+.shop .image {
+  position: relative;
+}
+.shop img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.shop .icons,
+.shop .add-to-cart {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+}
+.shop .icons {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.shop .icons a {
+  width: 32.5%;
+  background: #ffffff;
+}
+.shop .icons a:hover {
+  background: #000000;
+}
+.shop .icons a:hover i {
+  color: #ffffff;
+  opacity: 1;
+}
+.shop .icons i {
+  line-height: 46px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+}
+.shop .add-to-cart {
+  position: absolute;
+  bottom: 20px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  font-size: 0.8em;
+  color: #000000;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.shop .add-to-cart:hover {
+  background: #000000;
+  color: white;
+}
+.shop figcaption {
+  padding: 20px 20px 30px;
+}
+.shop h2,
+.shop p {
+  margin: 0;
+  text-align: left;
+}
+.shop h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.shop p {
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.shop .price {
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-weight: 700;
+  text-align: right;
+}
+.shop:hover img,
+.shop.hover img {
+  opacity: 0.8;
+}
+.shop:hover .icons,
+.shop.hover .icons,
+.shop:hover .add-to-cart,
+.shop.hover .add-to-cart {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+//To postion the cart at the right side 
+.Basket {
+    width: 30px;
+    height: 990px;    
+    padding: 150px;
+	border: 8px solid lightgreen;
+	position: absolute;
+	left: 999px;
+	top: -90px;
+	right: 7000px;
+	background: lightgreen;
+	
+
+}
+
+
+h1{
+	position: absolute;
+	top: 60px;
+	left: 10px;
+}	
+
+body{
+
+ background: black;
+  
+}
+//used to postion the store logo
+.logo{
+	margin: 50px;
+	position: absolute;
+	top: -40px;
+	left: -40px;
+	height: 50px;
+}
+//used to postion the little controller icons
+.controller{
+	margin: 50px;
+	position: absolute;
+	top: 310px;
+	left: 170px;
+	height: 150px;
+}
+
+.controller2{
+	margin: 50px;
+	position: absolute;
+	top: 855px;
+	left: 170px;
+	height: 150px;
+}
+
+.controller3{
+	margin: 50px;
+	position: absolute;
+	top: 1369px;
+	left: 170px;
+	height: 150px;
+}
+
+.controller4{
+	margin: 50px;
+	position: absolute;
+	top: 1890px;
+	left: 170px;
+	height: 150px;
+}
+////used to postion the coins to align next to the prize
+.coins{
+	margin: 50px;
+	position: absolute;
+	top: 1990px;
+	left: 245px;
+	height: 20px;
+}
+
+.coins2{
+	margin: 50px;
+	position: absolute;
+	top: 1475px;
+	left: 245px;
+	height: 20px;
+}
+
+.coins3{
+	margin: 50px;
+	position: absolute;
+	top: 957px;
+	left: 245px;
+	height: 20px;
+}
+
+.coins4{
+	margin: 50px;
+	position: absolute;
+	top: 417px;
+	left: 245px;
+	height: 20px;
+}
+
+.cart{
+	width: 300px;
+	height: auto;
+	position: absolute;
+	top: 57px;
+	left: 1005px;
+	
+}
